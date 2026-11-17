@@ -1,0 +1,10 @@
+<Project>
+  ...
+  <ItemGroup>
+    <!-- Include everything inside assets recursively and copy to output -->
+    <None Include="assets\**\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  ...
+</Project>
